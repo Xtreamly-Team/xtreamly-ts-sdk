@@ -1,5 +1,5 @@
 {
-  "name": "xtreamly-sdk",
+  "name": "@xtreamly/sdk",
   "version": "1.0.0",
   "description": "This is a Typescript sdk to easily access Xtreamly's predictions APIs, agents and a lot more intelligent functionality.",
   "repository": "https://github.com/Xtreamly-Team/xtreamly-ts-sdk",
