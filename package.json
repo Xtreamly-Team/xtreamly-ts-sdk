@@ -10,8 +10,9 @@
   "scripts": {
     "getVolatilityState": "ts-node examples/getVolatilityState.ts",
     "build": "tsc",
-    "postinstall": "husky",
+    "husky": "husky",
     "precommit": "pnpm build && git add dist",
+    "patch": "pnpm version patch",
     "publish": "pnpm publish --access public"
   },
   "dependencies": {
