@@ -1,10 +1,10 @@
 import {XtreamlyAPI, XtreamlyAPIPath} from "./XtreamlyAPI";
-import {Horizons, StatePrediction, VolatilityPrediction} from "../domains/VolatilityPrediction";
+import {Horizons, StatePrediction, VolatilityPrediction, Symbols} from "../domains/VolatilityPrediction";
 
 export class VolatilityAPI extends XtreamlyAPI {
   async prediction(
     horizon: Horizons = Horizons.min1,
-    symbol = "ETH",
+    symbol = Symbols.ETH,
   ): Promise<VolatilityPrediction> {
     return this.get(XtreamlyAPIPath.volatility, {
       symbol,
@@ -16,7 +16,7 @@ export class VolatilityAPI extends XtreamlyAPI {
     startDate: Date,
     endDate: Date,
     horizon: Horizons = Horizons.min1,
-    symbol = "ETH",
+    symbol = Symbols.ETH,
   ): Promise<VolatilityPrediction[]> {
     return this.get(XtreamlyAPIPath.volatilityHistorical, {
       symbol,
@@ -27,7 +27,7 @@ export class VolatilityAPI extends XtreamlyAPI {
   }
 
   async state(
-    symbol = "ETH",
+    symbol = Symbols.ETH,
   ): Promise<StatePrediction> {
     return this.get(XtreamlyAPIPath.state, {
       symbol,
@@ -37,9 +37,29 @@ export class VolatilityAPI extends XtreamlyAPI {
   async historicalState(
     startDate: Date,
     endDate: Date,
-    symbol = "ETH",
+    symbol = Symbols.ETH,
   ): Promise<VolatilityPrediction[]> {
     return this.get(XtreamlyAPIPath.stateHistorical, {
+      symbol,
+      start_date: startDate.getTime(),
+      end_date: endDate.getTime(),
+    });
+  }
+
+  async extremeState(
+    symbol = Symbols.ETH,
+  ): Promise<StatePrediction> {
+    return this.get(XtreamlyAPIPath.extremeState, {
+      symbol,
+    });
+  }
+
+  async extremeHistoricalState(
+    startDate: Date,
+    endDate: Date,
+    symbol = Symbols.ETH,
+  ): Promise<VolatilityPrediction[]> {
+    return this.get(XtreamlyAPIPath.extremeStateHistorical, {
       symbol,
       start_date: startDate.getTime(),
       end_date: endDate.getTime(),

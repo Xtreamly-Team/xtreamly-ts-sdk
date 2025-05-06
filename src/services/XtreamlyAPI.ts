@@ -6,6 +6,8 @@ export enum XtreamlyAPIPath {
   volatilityHistorical="volatility_historical",
   state="state_recognize",
   stateHistorical="state_historical",
+  extremeState="extreme_state_recognize",
+  extremeStateHistorical="extreme_state_historical",
 }
 
 export class XtreamlyAPI extends API {

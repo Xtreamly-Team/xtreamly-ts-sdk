@@ -9,6 +9,8 @@ var XtreamlyAPIPath;
     XtreamlyAPIPath["volatilityHistorical"] = "volatility_historical";
     XtreamlyAPIPath["state"] = "state_recognize";
     XtreamlyAPIPath["stateHistorical"] = "state_historical";
+    XtreamlyAPIPath["extremeState"] = "extreme_state_recognize";
+    XtreamlyAPIPath["extremeStateHistorical"] = "extreme_state_historical";
 })(XtreamlyAPIPath || (exports.XtreamlyAPIPath = XtreamlyAPIPath = {}));
 class XtreamlyAPI extends api_1.API {
     constructor() {

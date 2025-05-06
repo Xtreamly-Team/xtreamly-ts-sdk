@@ -1,4 +1,4 @@
-import {VolatilityAPI} from "xtreamly-sdk";
+import {Symbols, VolatilityAPI} from "../src";
 
 const api = new VolatilityAPI()
-api.state("ETH").then(console.log);
+api.extremeState(Symbols.BTC).then(console.log);

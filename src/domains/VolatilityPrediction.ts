@@ -18,3 +18,8 @@ export enum Horizons {
   min240="240min",
   min1440="1440min",
 }
+
+export enum Symbols {
+  ETH="ETH",
+  BTC="BTC",
+}

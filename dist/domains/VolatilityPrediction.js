@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Horizons = void 0;
+exports.Symbols = exports.Horizons = void 0;
 var Horizons;
 (function (Horizons) {
     Horizons["min1"] = "1min";
@@ -9,3 +9,8 @@ var Horizons;
     Horizons["min240"] = "240min";
     Horizons["min1440"] = "1440min";
 })(Horizons || (exports.Horizons = Horizons = {}));
+var Symbols;
+(function (Symbols) {
+    Symbols["ETH"] = "ETH";
+    Symbols["BTC"] = "BTC";
+})(Symbols || (exports.Symbols = Symbols = {}));

@@ -13,6 +13,8 @@
     "husky": "husky",
     "precommit": "pnpm build && git add dist",
     "patch": "pnpm version patch",
+    "minor": "pnpm version minor",
+    "major": "pnpm version major",
     "publish": "pnpm publish --access public"
   },
   "dependencies": {
