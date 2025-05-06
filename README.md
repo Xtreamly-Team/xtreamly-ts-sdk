@@ -9,7 +9,7 @@ Optimize and enhance your development process with this SDK, seamlessly integrat
 ## Install it as a typescript library
 
 ```bash
-pnpm add git+ssh://git@github.com:Xtreamly-Team/xtreamly-ts-sdk
+pnpm i @xtreamlyio/sdk
 ```
 
 ### Check the examples folder for usage examples:

@@ -11,7 +11,8 @@
     "getVolatilityState": "ts-node examples/getVolatilityState.ts",
     "build": "tsc",
     "postinstall": "husky",
-    "precommit": "pnpm build && git add dist"
+    "precommit": "pnpm build && git add dist",
+    "publish": "pnpm publish --access public"
   },
   "dependencies": {
     "@types/node": "^22.15.11",
