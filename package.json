@@ -1,0 +1,25 @@
+{
+  "name": "xtreamly-sdk",
+  "version": "1.0.0",
+  "description": "This is a Typescript sdk to easily access Xtreamly's predictions APIs, agents and a lot more intelligent functionality.",
+  "repository": "https://github.com/Xtreamly-Team/xtreamly-ts-sdk",
+  "author": "xtreamly.io",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "getVolatilityState": "ts-node examples/getVolatilityState.ts",
+    "build": "tsc",
+    "postinstall": "husky",
+    "precommit": "pnpm build && git add dist"
+  },
+  "dependencies": {
+    "@types/node": "^22.15.11",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "ts-node": "^10.9.2"
+  }
+}

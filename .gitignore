@@ -1,0 +1,38 @@
+# IDEs
+.idea
+.vscode
+.DS_Store
+
+# C extensions
+*.so
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+ui-debug.log
+
+# production
+/build
+tsconfig.app.tsbuildinfo
+.husky/_/
+
+# coverage
+coverage
+coverage.json
+
+# other
+temp
+
+pnpm-workspace.yaml
